@@ -7,14 +7,6 @@ const SmurfInfo = props => {
   useEffect(()=> {
     props.fetchData()
   }, []);
-  if (props.isFetching){
-    return (
-    <div className="loaderCSS">
-    <h2>" It Doesn't Matter Where You Come From, It Only Matters Who You Choose To Be."</h2>
-    <h3> => Papa Smurf (Smurfs2) </h3>
-    </div>
-    )
-  }
   return (
     <div className="card">
       {props.error && <p>{props.error}</p>}

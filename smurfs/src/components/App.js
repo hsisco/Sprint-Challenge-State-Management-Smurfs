@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 import Header from './Header';
-import Form from "./Form";
+import Form from './Form';
 import SmurfInfo from './SmurfInfo';
-import "./App.css";
+import './App.css';
 
 function App() {
     return (

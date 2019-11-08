@@ -3,7 +3,7 @@ import { START_FETCHING, FETCH_SUCCESS, FETCH_FAILURE } from '../actions';
 const initialState = {
   smurfData: [],
   isFetching: false,
-  error: ""
+  error: ''
 };
 
 const reducer = (state = initialState, action) => {
@@ -12,13 +12,13 @@ const reducer = (state = initialState, action) => {
       return {
         ...state,
         isFetching: true,
-        error: ""
+        error: ''
       };
     case FETCH_SUCCESS:
       return {
         ...state,
         isFetching: false,
-        error: "",
+        error: '',
         smurfData: action.payload
       };
     case FETCH_FAILURE:
