@@ -6,10 +6,10 @@ const SmurfCard = (props) => {
     return (
       <Card className="card" style={{ width: '18rem' }}>
         <Card.Body>
-          <Card.Title>Name: {props.}</Card.Title>
+          <Card.Title>Name: {props.data.name}</Card.Title>
           <Card.Text>
-            Age: {props.}<br/>
-            Height: {props.}<br/>
+            Age: {props.data.age}<br/>
+            Height: {props.data.height}<br/>
           </Card.Text>
         </Card.Body>
       </Card>
