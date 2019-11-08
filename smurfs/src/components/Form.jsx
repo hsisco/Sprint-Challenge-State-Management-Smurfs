@@ -10,7 +10,7 @@ const Form = (props) => {
   })
 
   const handleSubmit = e => {
-    console.log(newSmurf)
+    // console.log(newSmurf)
     props.addSmurf(newSmurf)
   }
 

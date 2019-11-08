@@ -4,7 +4,7 @@ import {fetchData} from '../actions';
 import {connect} from 'react-redux';
 
 const SmurfInfo = props => {
-  useEffect(()=> {
+  useEffect(props => {
     props.fetchData()
   }, []);
   return (
