@@ -8,7 +8,6 @@ export const ADD_SMURF_START = "ADD_SMURF_START";
 export const ADD_SMURF_SUCCESS = "ADD_SMURF_SUCCESS";
 export const ADD_SMURF_FAILURE = "ADD_SMURF_FAILURE";
 
-
 export const fetchData = () => dispatch => {
   dispatch({ type: START_FETCHING });
   axios
