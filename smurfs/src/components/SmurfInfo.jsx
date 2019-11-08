@@ -5,9 +5,7 @@ import { fetchData } from '../actions';
 import { connect } from 'react-redux';
 
 const SmurfInfo = props => {
-  useEffect(props => {
-    props.fetchData()
-  }, []);
+  useEffect(() => props.fetchData());
   return (
     <div className="cards">
       <CardDeck>
