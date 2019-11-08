@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import CardDeck from 'react-bootstrap/CardDeck'
 import SmurfCard from './SmurfCard';
 import { fetchData } from '../actions';
 import { connect } from 'react-redux';
@@ -8,24 +9,23 @@ const SmurfInfo = props => {
     props.fetchData()
   }, []);
   return (
-    <div className="card">
-      {props.error && <p>{props.error}</p>}
-      {props.smurfData.map(data => (
-        <SmurfCard 
-          key={data.id} 
-          {...data} />
-      ))}
+    <div className="cards">
+      <CardDeck>
+        {props.smurfData.map(data => (
+          <SmurfCard 
+            key={data.id} 
+            data={data} />
+        ))}
+      </CardDeck>
     </div>
   )
-}
+};
 
 const mapStateToProps = state => {
   return {
     smurfData: state.smurfData,
-    isFetching: state.isFetching,
-    error: state.error
   }
-}
+};
 
 export default connect(
   mapStateToProps,

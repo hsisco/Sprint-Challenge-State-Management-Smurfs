@@ -28,4 +28,4 @@ export const addSmurf = (smurf) => dispatch => {
       })
     })
     .catch(err => console.log(err))
-}
+};
