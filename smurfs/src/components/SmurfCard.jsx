@@ -2,7 +2,13 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 
 const SmurfCard = (props) => {
-    return (
+  // console.log(props.deleteSmurf);
+  const handleClick = e => {
+    props.deleteSmurf({ id: e.target.value})
+    console.log("e", e.target.value)
+  }
+
+  return (
       <Card className="card" style={{ width: '18rem' }}>
         <Card.Body>
           <Card.Title>Name: {props.data.name}</Card.Title>
@@ -10,6 +16,7 @@ const SmurfCard = (props) => {
             Age: {props.data.age}<br/>
             Height: {props.data.height}<br/>
           </Card.Text>
+          <button value={props.data.id} onClick={handleClick}>Delete</button>
         </Card.Body>
       </Card>
     )
