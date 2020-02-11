@@ -11,7 +11,7 @@ const SmurfCard = (props) => {
   return (
       <Card className="card" style={{ width: '18rem' }}>
         <Card.Body>
-          <Card.Title>Name: {props.data.name}</Card.Title>
+          <Card.Title className="name">{props.data.name}</Card.Title>
           <Card.Text>
             Age: {props.data.age}<br/>
             Height: {props.data.height}<br/>

@@ -9,13 +9,13 @@
   color: white;
 }
 
-.App-title {
+/* .App-title {
   font-size: 1.5em;
 }
 
 .App-intro {
   font-size: large;
-}
+} */
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
@@ -28,5 +28,32 @@ h1, h3{
 }
 
 h1{
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+
+h3{
   font-size: 2rem;
+  margin: 2vh 0 5vh;
+}
+
+.form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card{
+  margin: 2vh 0 5vh;
+}
+
+.name{
+  font-size: 1.4rem;
 }
