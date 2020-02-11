@@ -2,10 +2,10 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 
 const SmurfCard = (props) => {
-  // console.log(props.deleteSmurf);
+  // console.log(props);
   const handleClick = e => {
-    props.deleteSmurf({ id: e.target.value})
-    console.log("e", e.target.value)
+    props.deleteSmurf();
+    console.log("e", e.target.value, props)
   }
 
   return (
